@@ -17,9 +17,9 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-BOARD_VENDOR := oneplus
+BOARD_VENDOR := realme
 
-COMMON_PATH := device/oneplus/sdm845-common
+COMMON_PATH := device/realme/sdm710-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
@@ -39,7 +39,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sdm845
+TARGET_BOOTLOADER_BOARD_NAME := sdm710
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -51,12 +51,12 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := enchilada_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
+TARGET_KERNEL_CONFIG := RMX1971_defconfig
+TARGET_KERNEL_SOURCE := kernel/msm-4.9
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := sdm845
+TARGET_BOARD_PLATFORM := sdm710
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
@@ -159,4 +159,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+-include vendor/realme/sdm710-common/BoardConfigVendor.mk

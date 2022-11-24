@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
+$(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.sdm845 \
+    audio.primary.sdm710 \
     audio.r_submix.default \
     audio.usb.default \
     libbatterylistener \
@@ -203,14 +203,14 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.sdm845 \
-    hwcomposer.sdm845 \
+    gralloc.sdm710 \
+    hwcomposer.sdm710 \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    memtrack.sdm845 \
+    memtrack.sdm710 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator@1.0-service \
