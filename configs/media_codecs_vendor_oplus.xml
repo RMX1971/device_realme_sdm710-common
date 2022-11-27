@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012-2020 The Linux Foundation. All rights reserved.
      Not a contribution.
-
      Copyright (C) 2012-2013 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,14 +15,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Included>
-    <Decoders>
-        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
-        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-        <!-- Wuhan@MULTIMEDIA.MEDIASERVER.PLAYER.233011, 2020/09/03, -->
-        <!-- add for using OMX decoder for audio/raw since c2 decoder doesn't support 24/32 bit -->
-        <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
-        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
-        <!-- SimpleOMXComponet based software decoder-->
-    </Decoders>
-</Included>
+
+<MediaCodecs>
+<!-- Vendor Common Codecs -->
+    <!--#ifdef OPLUS_FEATURE_FFMPEG_INTEGRATION-->
+    <!--//dongdong.ge@PSW.MM.MediaServer.Player. 2020/04/09, Add for ffmpeg integration-->
+    <Include href="media_codecs_ffmpeg.xml" />
+    <!--#endif /* OPLUS_FEATURE_FFMPEG_INTEGRATION */-->
+    <!-- #ifdef OPLUS_FEATURE_DOLBY -->
+    <!-- WuHao@MULTIMEDIA.MMSERVER.PLAYER, 2019/09/18, add for dolby -->
+    <!--Include href="media_codecs_dolby_audio.xml" /-->
+    <!-- #endif OPLUS_FEATURE_DOLBY -->
+<!-- Vendor Common Codecs -->
+
+<!-- ODM Releated Codecs -->
+    <Include href="media_codecs_odm.xml" />
+<!-- ODM Releated Codecs -->
+</MediaCodecs>
