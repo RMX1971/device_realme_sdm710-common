@@ -1,2 +1,0 @@
-allow init op1_file:dir mounton;
-allow init op2_file:dir mounton;
