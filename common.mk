@@ -187,7 +187,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OnePlusDoze
+    OplusDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -247,7 +247,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oneplus_sdm845
+    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_PACKAGES += \
@@ -326,7 +326,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oneplus \
+    hardware/oplus \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
@@ -357,7 +357,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus
+    vendor.lineage.touch@1.0-service.oplus
 
 # tri-state-key
 PRODUCT_PACKAGES += \
