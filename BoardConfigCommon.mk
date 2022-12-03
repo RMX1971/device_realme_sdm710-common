@@ -57,3 +57,6 @@ TARGET_COPY_OUT_PRODUCT := system/product
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery_non-AB_variant.fstab
