@@ -19,3 +19,9 @@ $(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Platform
+TARGET_BOARD_PLATFORM := sdm710
+
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := all
