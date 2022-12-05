@@ -24,4 +24,15 @@ PRODUCT_SOONG_NAMESPACES += \
 TARGET_BOARD_PLATFORM := sdm710
 
 # QTI common
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    wlan
